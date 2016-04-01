@@ -1,0 +1,133 @@
+* {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+} 
+
+body
+{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 1em;
+}
+
+h1 {
+	font-size:1.5em;
+	width: 90%;
+	margin: 1em 5% 2% 5%;
+	padding: 0.5em;
+	text-align: center;
+	background-color: #689F38;
+	color: #ffffff;
+	border-radius: 10px;
+	border: 1px solid #000000;
+}
+
+
+body > div {
+	width: 90%;
+	margin: 0 5% 0 5%;
+	overflow: auto;
+ }
+
+
+ div > span {
+ 	position: relative;
+ 	float: left;
+ 	padding: 0.5em;
+ 	border: solid #000000 1px;
+ 	border-radius:  10px;
+ 	overflow: auto;
+ 	background-color: #689f38;
+ }
+
+
+ .header {
+ 	font-size: 1.25em;
+ 	position: absolute;
+ 	right: 0px;
+ 	top: 0px;
+ 	padding: 0.5em;
+ 	border-bottom-left-radius:10px;
+ 	border: 1px solid #000000;
+ }
+
+
+ .content {
+ 	color: #ffffff;
+ 	margin-top: 60px;
+ }
+
+
+ #header_1 {
+ 	background-color: #C0CA33;
+ 	color: #ffffff;
+ }
+
+ #header_2 {
+ 	background-color: #8BC34A;
+ 	color: #ffffff;
+ }
+
+ #header_3 {
+  	background-color: #AFB42B;	
+  	color: #ffffff;
+ }
+
+
+/** Large Devices **/
+@media (min-width: 992px)
+{
+	#section_1, #section_2, #section_3 {
+		width: 32%;
+	}
+
+	#section_1 {
+		margin: 0 1% 0 0;
+	}
+
+	#section_2 {
+		margin: 0 1% 0% 1%;
+	}
+
+	#section_3 {
+		margin: 0 0 0 1%;
+	}
+}
+
+/** Medium Devices **/
+@media (min-width: 768px) and (max-width: 991px)
+{
+	#section_1, #section_2 {
+		width: 49%;
+	}
+
+	#section_1
+	{
+		margin: 0 1% 0 0;
+	}
+
+	#section_2
+	{
+		margin: 0 0 0 1%;
+	}
+
+	#section_3
+	{
+		margin: 2% 0 0 0;
+	}
+}
+
+
+/** Small Devices **/
+@media (max-width: 767px)
+{
+	#section_1, #section_2, #section_3
+	{
+		width: 100%;
+	}
+
+	#section_2
+	{
+		margin: 2% 0 2% 0;
+	}
+}
